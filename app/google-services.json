@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "161864388438",
+    "firebase_url": "https://mensajero-7802b.firebaseio.com",
+    "project_id": "mensajero-7802b",
+    "storage_bucket": "mensajero-7802b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:161864388438:android:05518e755c62887f",
+        "android_client_info": {
+          "package_name": "com.mensajero.equipo.mensajero"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "161864388438-rgm0f6dgbbk65ggjb0tueipkg4k346od.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mensajero.equipo.mensajero",
+            "certificate_hash": "4be6695384186af8415a60c4bfb3839522c5b223"
+          }
+        },
+        {
+          "client_id": "161864388438-kgj0e4mu58t8tc4tk29sodvickq1407f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfDCWsVDxuPjZJzR11x9V_RknoI9r0CPM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "161864388438-kgj0e4mu58t8tc4tk29sodvickq1407f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

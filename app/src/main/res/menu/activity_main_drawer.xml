@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_inicio"
+            android:icon="@drawable/ic_if_home_322449"
+            android:title="Inicio" />
+        <item
+            android:id="@+id/nav_perfil"
+            android:title="Perfil"
+            android:icon="@drawable/ic_perfil"
+            />
+        <item
+        android:id="@+id/nav_mis_solicitudes"
+        android:icon="@drawable/notificacion_moto"
+        android:title="Historial mandados" />
+        <item
+            android:id="@+id/nav_mis_solicitudes_carros"
+            android:icon="@drawable/ic_historial"
+            android:title="Historial viajes" />
+        <item
+            android:id="@+id/nav_mis_domicilios_en_curso"
+            android:icon="@drawable/notificacion_moto"
+            android:title="Domicilios en curso"
+            app:actionViewClass="androidx.appcompat.widget.AppCompatTextView"/>
+        <item
+            android:id="@+id/nav_mis_bonos"
+            android:title="Mis bonos"
+            android:icon="@drawable/ic_bonos"
+            />
+        <item
+            android:id="@+id/nav_ayuda"
+            android:icon="@drawable/ic_if_icon_help_211675"
+            android:title="Ayuda" />
+    </group>
+
+    <item android:title="Compartir">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Referir un amigo" />
+
+            <item
+                android:id="@+id/nav_salir"
+                android:icon="@android:drawable/ic_lock_power_off"
+                android:title="@string/action_salir"/>
+        </menu>
+    </item>
+
+</menu>

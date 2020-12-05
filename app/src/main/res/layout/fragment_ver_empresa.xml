@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_ver_empresa"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/quantum_white_100"
+    android:paddingTop="20dp"
+    style="@style/AppTheme"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/ic_launcher_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/common_google_signin_btn_text_dark_pressed">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/portada_empresa"
+                        android:layout_width="0dp"
+                        android:layout_height="180dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <ImageView
+                        android:id="@+id/perfil_empresa"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:background="@drawable/fondo_perfil_img"
+                        app:layout_constraintBottom_toBottomOf="@+id/portada_empresa"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/portada_empresa" />
+
+                    <TextView
+                        android:id="@+id/text_nombre_empresa"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:fontFamily="@font/bariol_bold"
+                        android:text="nombre empresa"
+                        android:textColor="@color/quantum_black_100"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/perfil_empresa"
+                        app:layout_constraintTop_toBottomOf="@+id/portada_empresa" />
+
+                    <TextView
+                        android:id="@+id/text_descripcion_empresa"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:text="descripción empresa"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/text_horario_empresa" />
+
+                    <TextView
+                        android:id="@+id/text_horario_empresa"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:text="horario"
+                        android:textColor="@color/quantum_black_100"
+                        app:layout_constraintStart_toEndOf="@+id/perfil_empresa"
+                        app:layout_constraintTop_toBottomOf="@+id/text_nombre_empresa" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler_ofertas"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:background="@color/com_facebook_primary_button_text_color"
+                        android:paddingBottom="100dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/text_descripcion_empresa">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                    <TextView
+                        android:id="@+id/text_valor_domicilio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        android:fontFamily="@font/bariol_bold"
+                        android:text="valor domicilio"
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/text_nombre_empresa" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <ru.nikartm.support.ImageBadgeView
+            android:id="@+id/img_canasta"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="-104dp"
+            android:layout_weight="1"
+            android:padding="1dp"
+            app:ibv_badgeColor="@android:color/holo_red_light"
+            app:ibv_badgeLimitValue="false"
+            app:ibv_badgePosition="top_right"
+            app:ibv_badgeTextColor="#ffffff"
+            app:ibv_badgeTextSize="12sp"
+            app:ibv_badgeTextStyle="bold"
+            app:ibv_fixedBadgeRadius="10dp"
+            app:srcCompat="@drawable/canasta_mensajero" />
+
+    </LinearLayout>
+
+</FrameLayout>

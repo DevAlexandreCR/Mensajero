@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.NoActionBar" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+    <item name="android:statusBarColor">@color/transparente</item>
+    <item name="android:windowLightStatusBar">true</item>
+    <item name="android:windowContentTransitions">true</item>
+    <item name="android:fontFamily">@font/bariol</item>
+</style>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/transparente</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:fontFamily">@font/bariol</item>
+    </style>
+
+
+
+    <!-- tema para la rating bar. -->
+    <style name="MyRatingBar" parent="Widget.AppCompat.RatingBar">
+        <item name="colorAccent">@color/colornaranja</item>
+        <item name="android:colorControlNormal">@color/colornegro</item>
+        <item name="android:colorPrimary">@color/colornaranja</item>
+    </style>
+    <style name="AppThemeRatingBar" parent="Theme.AppCompat">
+        <item name="ratingBarStyle">@style/MyRatingBar</item>
+    </style>
+
+    <style name="DialogConfirmDomi" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@color/transparente</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

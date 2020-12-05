@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- inherit from the material theme -->
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colornegro</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:fontFamily">@font/bariol</item>
+
+    </style>
+
+    <!-- tema para la rating bar. -->
+    <style name="MyRatingBar" parent="Widget.AppCompat.RatingBar">
+        <item name="colorAccent">@color/colornaranja</item>
+        <item name="android:colorControlNormal">@color/colornaranja</item>
+    </style>
+    <style name="AppThemeRatingBar" parent="Theme.AppCompat">
+        <item name="ratingBarStyle">@style/MyRatingBar</item>
+    </style>
+    <style name="RatingBarMotos" parent="@android:style/Widget.Material.RatingBar">
+        <item name="android:minHeight">48dip</item>
+        <item name="android:maxHeight">48dip</item>
+        <item name="android:progressDrawable">@drawable/rating_bar_motos</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <!-- tema de los botones FAB -->
+    <style name="FABtheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colornegro</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark">
+
+
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark">
+    </style>
+
+    <style name="carga" parent="android:Theme.Material.Light.NoActionBar.Fullscreen">
+    </style>
+
+    <!-- tema de los textinput para que sean blancos -->    <!-- -->
+    <style name="estiloTextInput" parent="Widget.Design.TextInputLayout">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/colorBlanco</item>
+        <item name="android:textSize">14sp</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/colorBlanco</item>
+        <item name="colorControlNormal">@color/colorBlanco</item>
+        <item name="colorControlActivated">@color/colorBlanco</item>
+    </style>
+
+    <!-- para el dialog de salir que sea transparente y solo dos botones-->
+    <style name="dialogosTransparente">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <!--animacion para el dialogo de confirmacion de solicitud -->
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_up</item>
+    </style>
+
+    <style name="Error" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textColor">@color/colornaranja</item>
+    </style>
+
+    <style name="DialogConfirmDomi" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@color/transparente</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

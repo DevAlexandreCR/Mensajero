@@ -1,0 +1,294 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:animateLayoutChanges="true"
+    android:background="@color/colorPrimary"
+    tools:context="com.mensajero.equipo.mensajero.LoginActivity"
+    >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="130dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/logo" />
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:animateLayoutChanges="true"
+        android:paddingBottom="5dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            app:layout_constraintEnd_toStartOf="@+id/textInputLayout"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayout">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:theme="@style/estiloTextInput"
+                app:errorTextAppearance="@style/Error"
+                app:layout_constraintBottom_toTopOf="@+id/textInputLayout2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:textColor="@color/blancotransparente"
+                    app:errorTextAppearance="@style/Error" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/estiloTextInput"
+                app:layout_constraintBottom_toTopOf="@+id/layoutregistrar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_password"
+                    android:imeActionLabel="@string/prompt_password"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:textColor="@color/blancotransparente"
+                    app:passwordToggleEnabled="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutregistrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@+id/iniciarSesion"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tnombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:theme="@style/estiloTextInput">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/nombre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_nombre"
+                        android:imeActionLabel="@string/action_registrar_nombre"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:textColor="@color/blancotransparente" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tnumero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/estiloTextInput">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/numero_tel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_num_tel"
+                        android:imeActionLabel="@string/action_registrar_numero"
+                        android:imeOptions="actionDone"
+                        android:inputType="text|phone"
+                        android:maxLines="1"
+                        android:textColor="@color/blancotransparente" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/treferido"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:theme="@style/estiloTextInput">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/referido"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_referido"
+                        android:imeActionLabel="@string/action_registrar_nombre"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:textColor="@color/blancotransparente" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_terminos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_horizontal"
+                android:text="@string/politicas_y_terminos"
+                android:textColor="@color/blancotransparente"
+                android:textSize="12sp"
+                app:fontFamily="@font/bariol_bold"
+                app:layout_constraintBottom_toTopOf="@+id/iniciarSesion"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutregistrar" />
+
+            <Button
+                android:id="@+id/iniciarSesion"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/botones_inicio_sesion"
+                android:elevation="20dp"
+                android:text="@string/action_sign_in"
+                android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/registrar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutregistrar" />
+
+
+            <Button
+                android:id="@+id/registrar"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:background="@android:color/transparent"
+                android:elevation="20dp"
+                android:text="@string/nueva_cuenta"
+                android:textColor="?android:attr/windowBackground"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/recuperar_contrasena"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iniciarSesion" />
+
+            <Button
+                android:id="@+id/recuperar_contrasena"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:background="@android:color/transparent"
+                android:elevation="20dp"
+                android:text="@string/recuperar_contraseña"
+                android:textColor="?android:attr/windowBackground"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/registrar" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal"
+                android:soundEffectsEnabled="true"
+                android:splitMotionEvents="true"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textinfo">
+
+                <RadioButton
+                    android:id="@+id/radioButtonU"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/colornaranja"
+                    android:checked="true"
+                    android:soundEffectsEnabled="true"
+                    android:text="Soy Usuario"
+                    android:textColor="@color/colorBlanco"
+                    android:textColorLink="@color/colornaranja" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/colornaranja"
+                    android:soundEffectsEnabled="true"
+                    android:text="Soy un Empresa"
+                    android:textColor="@color/colorBlanco"
+                    android:textColorLink="@color/colornaranja" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:paddingStart="30px"
+                android:paddingEnd="30px"
+                android:text="Selecciona el tipo de usuario que quieres registrar "
+                android:textAlignment="center"
+                android:textColor="@color/blancotransparente"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</LinearLayout>

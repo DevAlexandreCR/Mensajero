@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="tipos_de_pedidos_empresa">
+        <item>Elija el tipo de solicitud</item>
+        <item>Compras - Domicilios</item>
+        <item>Pago de facturas o trámites</item>
+        <item>Encomiendas</item>
+        <item>Solicitud Rápida</item>
+    </string-array>
+</resources>

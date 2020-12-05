@@ -1,0 +1,162 @@
+<resources>
+    <string name="app_name">Mensajero</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_solicitudes_">Solicitar Servicio</string>
+    <string name="service_not_available">PROBLEMAS DE RED</string>
+    <string name="no_address_found">DIRECCION NO ENCONTRADA</string>
+    <string name="invalid_lat_long_used">COORDENADAS NO VALIDAS</string>
+    <string name="address_found">DIRECCION ENCONTRADA</string>
+    <string name="no_geocoder_available">geocoder error</string>
+
+    <!--claves de appi google-->
+    <!-- <string name="API_KEY_DEBUG">AIzaSyAZGLcZLTGspWfrPEU5Md71_goW9B891pY</string>-->
+    <string name="API_KEY_PROD">AIzaSyAeVEYuE4aaI3JKttR-b0Zn9Lym8WZyEn4</string>
+    <string name="API_KEY_DEBUG">AIzaSyApH44A7kXhY_UCePee_sx37f2G9y5KOWg</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_login">"Inicio de Sesión "</string>
+    <string name="action_salir">Cerrar Sesión</string>
+
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Contraseña</string>
+    <string name="prompt_referido">Pegar id referido (opcional)</string>
+    <string name="action_sign_in">Iniciar Sesión</string>
+    <string name="action_sign_in_short">Iniciar Sesión</string>
+    <string name="error_invalid_email">El correo no es correcto</string>
+    <string name="error_invalid_password">La contraseña es muy corta</string>
+    <string name="error_incorrect_password">La contraseña es incorecta</string>
+    <string name="error_incorrect_direccion">Escriba una dirección completa</string>
+    <string name="error_field_required">Éste campo es Obligatorio</string>
+    <string name="action_registrar_nombre">Nombre</string>
+    <string name="prompt_nombre">Nombre y Apellido</string>
+    <string name="prompt_num_tel">Numero de teléfono</string>
+    <string name="action_registrar_numero">Numero</string>
+    <string name="action_registrarse">Registrarse</string>
+    <string name="error_invalid_nombre">el nombre demasiado corto</string>
+    <string name="error_invalid_numero">el numero debe tener 10 digitos</string>
+    <string name="direccion_final">Entregar en:</string>
+    <string name="direccion_inicial">Recoger en: </string>
+    <string name="hora">Hora llegada</string>
+    <string name="fecha">Fecha DD/MM/AA</string>
+    <string name="comentario">¿Qué debe hacer el mensajero?</string>
+    <string name="direccion_final_opcional">Entregar en :</string>
+    <string name="android_studio_android_com">android.studio@android.com</string>
+    <string name="programar">Programar</string>
+    <string name="nueva_cuenta"><u>¿No tienes cuenta? Regístrate</u></string>
+    <string name="si_cuenta"><u>¿Ya tienes cuenta? Inicia sesión</u></string>
+    <string name="recuperar_contraseña"><u>¿Olvidaste la contraseña?</u></string>
+    <string name="texto_copiar"><u>copiar</u></string>
+    <string name="texto_historial_vacio"><b>¡Historial vacío! una buena oportunidad para empezar.</b></string>
+    <string name="domi_vacio">Si no encuentras lo que quieres lo puedes escribir</string>
+
+    <string name="politicas_y_terminos">Al continuar usted acepta nuestra <b><i><u>política de privacidad</u></i></b>\n y <b><i><u>Condiciones de uso</u></i></b></string>
+
+    <!--para facebook-->
+    <string name="facebook_app_id">1297951446975925</string>
+    <string name="fb_login_protocol_scheme">fb1297951446975925</string>
+
+
+    <!-- texto de ayuda  -->
+    <string name="texto_ayuda"> \n <b>Preguntas Frecuentes:</b> \n\n
+
+        <b>-¿Qué es mensajero?</b>\n\n
+
+        Sabemos lo valioso que es el tiempo para ti, por eso nace mensajero para realizar todas esas
+        cosas que, seguramente deseas que alguien más haga por ti. Hacer que puedas aprovechar mejor tu tiempo,
+        eso es mensajero.\n\n
+
+        <b>-¿Cómo funciona mensajero?</b>\n\n
+        Sencillo sólo sigue estos pasos y tendrás tu primer mensajero en la puerta de tu casa:\n\n
+
+        * Descarga la app y registra tus datos.\n\n
+        * Solicita tu mensajero.\n\n
+        * Recibirás una llamada para confirmar los datos y para confirmarte el valor definitivo del servicio, luego
+        se te enviará una notificaión con la información de tu mensajero.\n\n
+        * Disfruta tu tiempo libre mientras hacemos las cosas por ti.\n\n
+
+        <b>-¿Dónde funciona mensajero?</b>\n\n
+
+        Actualmente puedes solicitar un mensajero en la ciudad de Popayán y sus alrededores. Pronto
+        estaremos funcionando en otras ciudades.\n\n
+
+        <b>-¿Porqué debo registrarme para solicitar un servicio?</b>\n\n
+
+        Es indispesable realizar el proceso de registro con datos validos para solicitar un servicio,
+        ya que de ello depende el buen funcionamiento de la aplicación.\n\n
+
+        <b>-¿Es necesario dar mi numero telefónico en el registro?</b>\n\n
+
+        \"mensajero\" se preocupa por realizar tus solicitudes a contra reloj y sin contratiempos, por eso
+        poder comunicarnos telefónicamente hace el proceso mucho mas efectivo, por eso es inprescindible
+        que registres un numero de telefono valido.\n\n
+
+        <b>- ¿Cómo solicitar un mensajero?</b> \n\n
+        Sólo debes ingresar la dirección donde quieres que llegue el mensajero y agregar una breve descripción de
+        lo que debe realizar. Recuerda que al dar click en el boton \"Solicitar\" se agrega automaticamente
+        la dirección en la que te encuentras actualmente.\n\n
+
+        <b>- ¿Cómo agregar una dirección?</b>\n\n
+
+        Ten en cuenta que en la opción \"Recoger en:\" el sistema agrega la dirección donde te encuentras en ese momento,
+        si deseas cambiarla puedes:\n\n
+        * escribir una nueva dirección en el apartado \"Recoger en:\" o \"Entregar en:\"(opcional).\n\n
+        * escribir la direccion y y tocar la \"lupa\" para que se busque la direccion en el mapa(opcional).\n\n
+        * tocar el \"ícono de mapa\" para buscar una ubicación en él.\n\n
+        * al buscar ubicaciones puedes mover el mapa hasta encontrar la dirección adecuada y aceptar para
+          que se agregue o cancelar \"X\" para regresar.\n\n
+
+        <b>------De los servicios------</b>\n\n
+
+        <b>-¿Puedo cancelar un servicio?</b>\n\n
+
+        Si, puedes cancelar un servicio antes de que se te asigne un mensajero, desde la opcion
+        \"Historial\" de la aplicación y boton cancelar.\n\n
+
+        <b>-¿Cuánto tiempo tarda en asignar un mensajero?</b>\n\n
+
+        Estamos trabajando arduamente para poder asignarte tu mensajero en tiempo record, por ahora pedimos
+        una espera de 15 minutos y de no ser posible en ese tiempo, nuestras asesoras se comunicarán para
+        preguntarte si se puede dar un poco más de espera.\n\n
+
+        <b>-¿En qué horarios puedo solicitar un mensajero?</b>\n\n
+
+        Los mensajeros por políticas locales no pueden movilizar sus motos despues de las 10:30 pm, pero
+        puedes en cualquier horario usar la aplicación y programar un servicio.\n\n
+
+        <b>-¿Cómo programo un servicio?</b>\n\n
+
+        Exactamente igual de facil como solicitar un servicio, solo debes agregar la fecha y el horario
+        en que quieres que tu mensajero llegue a la primer dirección, recuerda que el mensajero legará en un rango de
+        tiempo de 30 minutos con respecto al horario establecido.\n\n
+
+        <b>-¿Cómo pago el servicio?</b>\n\n
+
+        El servicio lo pagas a tu mensajero, lo puedes pagar en la primer dirección o en la última, ya que
+        desde el momento en el que se te asigna el mensajero ya conoces el valor a cancelar.\n\n
+
+        <b>-¿El mensajero puede cobrar un monto adicional al reflejado en la aplicación?</b>\n\n
+
+        De ninguna manera, el valor del servicio es el que aparece en la aplicación, si llega a suceder
+        por favor dejanos conocer el caso en <b><u>soporte@mensajero.online</u></b> y asi tomar las medidas correspondientes.\n\n
+
+
+
+
+
+
+
+
+
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="iniciar_chat"><u>Iniciar chat con el conductor</u></string>
+
+
+</resources>
